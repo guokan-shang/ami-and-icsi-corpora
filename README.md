@@ -6,7 +6,7 @@ The preprocessed corpora can be directly downloaded from [here](https://drive.go
 If you want to run the code yourself, please follow the following instructions. Dependency requirements: [xmltodict](https://github.com/martinblech/xmltodict).
 
 # AMI Corpus
-1. Extract [AMI manual annotations v1.6.2](http://groups.inf.ed.ac.uk/ami/download/) under `input/ami_public_manual_1.6.2`.
+1. Extract [AMI manual annotations v1.6.2 (ami_public_manual_1.6.2.zip)](http://groups.inf.ed.ac.uk/ami/download/) under `input/ami_public_manual_1.6.2`.
 
 2. Run the following Python scripts to obtain repective annotations in JSON format under `output/`.
 
@@ -275,6 +275,7 @@ If you want to run the code yourself, please follow the following instructions. 
 ```
 </details>
 
+For more details of these annotations, please refer to the [annotation guidelines](https://groups.inf.ed.ac.uk/ami/corpus/guidelines.shtml) or the citations in below.
 
 # ICSI Corpus
 1. Extract [ICSI core plus contributed annotations v1.0 (ICSI_plus_NXT.zip)](https://groups.inf.ed.ac.uk/ami/icsi/download/) under `input/ICSI_plus_NXT`.
