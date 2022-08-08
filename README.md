@@ -1,7 +1,7 @@
 # AMI and ICSI Corpora
 This is a python3 project that converts some annotations of the [AMI and ISCI Corpora](https://groups.inf.ed.ac.uk/ami/) from the original XML format into the JSON format.
 
-The preprocessed corpora can be directly downloaded from [here](https://drive.google.com/drive/folders/1BbmaZnzG9WrqOO-D3h211NOJePotqwQJ?usp=sharing) (last update 08/08/2022).
+The processed corpora can be directly downloaded from [here](https://drive.google.com/drive/folders/1BbmaZnzG9WrqOO-D3h211NOJePotqwQJ?usp=sharing) (last update 08/08/2022).
 
 If you want to run the code yourself, please follow the following instructions. Dependency requirements: [xmltodict](https://github.com/martinblech/xmltodict).
 
