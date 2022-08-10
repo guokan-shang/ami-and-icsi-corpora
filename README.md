@@ -8,7 +8,7 @@ If you want to run the code yourself, please follow the following instructions. 
 # AMI Corpus
 1. Extract [AMI manual annotations v1.6.2 (ami_public_manual_1.6.2.zip)](http://groups.inf.ed.ac.uk/ami/download/) under `input/ami_public_manual_1.6.2`.
 
-2. Run the following Python scripts to obtain repective annotations in JSON format under `output/`.
+2. Run the following Python scripts to obtain respective annotations in JSON format under `output/`.
 
 * **Manual meeting transcriptions** (dialogueActs.py). Note: you should run this script first.
 <details>
@@ -280,7 +280,7 @@ For more details of these annotations, please refer to the [annotation guideline
 # ICSI Corpus
 1. Extract [ICSI core plus contributed annotations v1.0 (ICSI_plus_NXT.zip)](https://groups.inf.ed.ac.uk/ami/icsi/download/) under `input/ICSI_plus_NXT`.
 
-2. Run the following Python scripts to obtain repective annotations in JSON format under `output/`.
+2. Run the following Python scripts to obtain respective annotations in JSON format under `output/`.
 
 * **Manual meeting transcriptions** (dialogueActs.py). Note: you should run this script first.
 <details>
