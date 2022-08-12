@@ -435,10 +435,10 @@ For more details of these annotations, please refer to the [annotation guideline
 If you find this repository helpful, please consider to cite the publications:
 ```
 @article{rennard2022abstractive,
-    title={Abstractive Meeting Summarization: A Survey},
-    author={Rennard, Virgile and Shang, Guokan and Hunter, Julie and Vazirgiannis, Michalis},
-    journal={arXiv preprint},
-    year={2022}
+  title={Abstractive Meeting Summarization: A Survey},
+  author={Rennard, Virgile and Shang, Guokan and Hunter, Julie and Vazirgiannis, Michalis},
+  journal={arXiv preprint arXiv:2208.04163},
+  year={2022}
 }
 ```
 
