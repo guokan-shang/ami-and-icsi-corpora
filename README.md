@@ -431,6 +431,25 @@ For more details of these annotations, please refer to the [annotation guideline
 
 For more details of these annotations, please refer to the [annotation guidelines](https://groups.inf.ed.ac.uk/ami/corpus/guidelines.shtml) or the citations in below.
 
+# Training, Validation, and Test Sets
+For the AMI corpus, multiple official suggestions exist [here](https://groups.inf.ed.ac.uk/ami/corpus/datasets.shtml), "scenario-only partition of meetings" in below is the most adopted one in the litterature.
+```python
+def flatten(list_of_list):
+    return [item for sublist in list_of_list for item in sublist]
+ 
+ami_train = ['ES2002', 'ES2005', 'ES2006', 'ES2007', 'ES2008', 'ES2009', 'ES2010', 'ES2012', 'ES2013', 'ES2015', 'ES2016', 'IS1000', 'IS1001', 'IS1002', 'IS1003', 'IS1004', 'IS1005', 'IS1006', 'IS1007', 'TS3005', 'TS3008', 'TS3009', 'TS3010', 'TS3011', 'TS3012']
+ami_train = flatten([[m_id+c for c in 'abcd'] for m_id in ami_train])
+ami_train.remove('IS1002a')
+ami_train.remove('IS1005d')
+
+ami_validation = ['ES2003', 'ES2011', 'IS1008', 'TS3004', 'TS3006']
+ami_validation = flatten([[m_id+c for c in 'abcd'] for m_id in ami_validation])
+
+ami_test = ['ES2004', 'ES2014', 'IS1009', 'TS3003', 'TS3007']
+ami_test = flatten([[m_id+c for c in 'abcd'] for m_id in ami_test])
+```
+
+  
 # Citations
 If you find this repository helpful, please consider to cite the publications:
 ```
@@ -443,20 +462,12 @@ If you find this repository helpful, please consider to cite the publications:
 ```
 
 ```
-@inproceedings{shang-etal-2020-energy,
-    title = "Energy-based Self-attentive Learning of Abstractive Communities for Spoken Language Understanding",
-    author = "Shang, Guokan  and
-      Tixier, Antoine  and
-      Vazirgiannis, Michalis  and
-      Lorr{\'e}, Jean-Pierre",
-    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
-    month = dec,
-    year = "2020",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.aacl-main.34",
-    pages = "313--327",
-    abstract = "Abstractive community detection is an important spoken language understanding task, whose goal is to group utterances in a conversation according to whether they can be jointly summarized by a common abstractive sentence. This paper provides a novel approach to this task. We first introduce a neural contextual utterance encoder featuring three types of self-attention mechanisms. We then train it using the siamese and triplet energy-based meta-architectures. Experiments on the AMI corpus show that our system outperforms multiple energy-based and non-energy based baselines from the state-of-the-art. Code and data are publicly available.",
+@inproceedings{shang2020energy,
+  title={Energy-based Self-attentive Learning of Abstractive Communities for Spoken Language Understanding},
+  author={Shang, Guokan and Tixier, Antoine and Vazirgiannis, Michalis and Lorr{\'e}, Jean-Pierre},
+  booktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},
+  pages={313--327},
+  year={2020}
 }
 ```
 
