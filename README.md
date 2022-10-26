@@ -432,26 +432,31 @@ For more details of these annotations, please refer to the [annotation guideline
 For more details of these annotations, please refer to the [annotation guidelines](https://groups.inf.ed.ac.uk/ami/corpus/guidelines.shtml) or the citations in below.
 
 # Training, Validation, and Test Sets
-For the AMI corpus, multiple official suggestions exist [here](https://groups.inf.ed.ac.uk/ami/corpus/datasets.shtml), "scenario-only partition of meetings" in below is the most adopted one in the litterature.
+For the AMI corpus, multiple official suggestions exist [here](https://groups.inf.ed.ac.uk/ami/corpus/datasets.shtml), "scenario-only partition of meetings" in below is the most adopted one in the litterature:
 ```python
 def flatten(list_of_list):
     return [item for sublist in list_of_list for item in sublist]
  
 ami_train = ['ES2002', 'ES2005', 'ES2006', 'ES2007', 'ES2008', 'ES2009', 'ES2010', 'ES2012', 'ES2013', 'ES2015', 'ES2016', 'IS1000', 'IS1001', 'IS1002', 'IS1003', 'IS1004', 'IS1005', 'IS1006', 'IS1007', 'TS3005', 'TS3008', 'TS3009', 'TS3010', 'TS3011', 'TS3012']
-ami_train = flatten([[m_id+c for c in 'abcd'] for m_id in ami_train])
+ami_train = flatten([[m_id+s_id for s_id in 'abcd'] for m_id in ami_train])
 ami_train.remove('IS1002a')
 ami_train.remove('IS1005d')
 
 ami_validation = ['ES2003', 'ES2011', 'IS1008', 'TS3004', 'TS3006']
-ami_validation = flatten([[m_id+c for c in 'abcd'] for m_id in ami_validation])
+ami_validation = flatten([[m_id+s_id for s_id in 'abcd'] for m_id in ami_validation])
 
 ami_test = ['ES2004', 'ES2014', 'IS1009', 'TS3003', 'TS3007']
-ami_test = flatten([[m_id+c for c in 'abcd'] for m_id in ami_test])
+ami_test = flatten([[m_id+s_id for s_id in 'abcd'] for m_id in ami_test])
 ```
 
-  
+For the ICSI corpus, the traditional test set (see citations [4]) is shown in below, training and validation sets are not specified. 
+```
+icsi_test = ['Bed004', 'Bed009', 'Bed016', 'Bmr005', 'Bmr019', 'Bro018']
+```
 # Citations
 If you find this repository helpful, please consider to cite the publications:
+
+[1] [Abstractive Meeting Summarization: A Survey](https://arxiv.org/abs/2208.04163)
 ```
 @article{rennard2022abstractive,
   title={Abstractive Meeting Summarization: A Survey},
@@ -460,7 +465,7 @@ If you find this repository helpful, please consider to cite the publications:
   year={2022}
 }
 ```
-
+[2] [Energy-based Self-attentive Learning of Abstractive Communities for Spoken Language Understanding](https://aclanthology.org/2020.aacl-main.34/)
 ```
 @inproceedings{shang2020energy,
   title={Energy-based Self-attentive Learning of Abstractive Communities for Spoken Language Understanding},
@@ -470,12 +475,21 @@ If you find this repository helpful, please consider to cite the publications:
   year={2020}
 }
 ```
-
+[3] [Spoken Language Understanding for Abstractive Meeting Summarization](https://tel.archives-ouvertes.fr/tel-03169877/document)
 ```
 @phdthesis{shang2021spoken,
   title={Spoken Language Understanding for Abstractive Meeting Summarization},
   author={Shang, Guokan},
   year={2021},
   school={Institut polytechnique de Paris}
+}
+```
+[4] [Unsupervised abstractive meeting summarization with multi-sentence compression and budgeted submodular maximization](https://aclanthology.org/P18-1062/)
+```
+@article{shang2018unsupervised,
+  title={Unsupervised abstractive meeting summarization with multi-sentence compression and budgeted submodular maximization},
+  author={Shang, Guokan and Ding, Wensi and Zhang, Zekun and Tixier, Antoine Jean-Pierre and Meladianos, Polykarpos and Vazirgiannis, Michalis and Lorr{\'e}, Jean-Pierre},
+  journal={arXiv preprint arXiv:1805.05271},
+  year={2018}
 }
 ```
