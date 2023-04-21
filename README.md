@@ -3,6 +3,8 @@ This is a python3 project that converts some annotations of the [AMI and ISCI Co
 
 The processed corpora can be directly downloaded from [here](https://drive.google.com/drive/folders/1BbmaZnzG9WrqOO-D3h211NOJePotqwQJ?usp=sharing) (last update 08/08/2022).
 
+Click ► in below to see example and explication of each annotation.
+
 If you want to run the code yourself, please follow the following instructions. Dependency requirements: [xmltodict](https://github.com/martinblech/xmltodict).
 
 # AMI Corpus
@@ -454,7 +456,7 @@ For the ICSI corpus, the traditional test set (see citations [4]) is shown in be
 icsi_test = ['Bed004', 'Bed009', 'Bed016', 'Bmr005', 'Bmr019', 'Bro018']
 ```
 # Citations
-If you find this repository helpful, please consider to cite the publications:
+In addition to the original dataset paper, if you find this repository helpful, please consider to cite the publications:
 
 [1] [Abstractive Meeting Summarization: A Survey](https://arxiv.org/abs/2208.04163)
 ```
