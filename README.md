@@ -496,4 +496,4 @@ In addition to the original dataset paper, if you find this repository helpful, 
 }
 ```
 # Known issues
-- In the AMI corpus, certain text fields either consist of a lone period, such as `"text": "."`, or begin with one. These anomalies stem from the original data source.
+- In the AMI corpus, certain text fields either consist of a lone punctuation mark, such as `"text": "."`, or begin with one. These anomalies stem from the original data source.
