@@ -456,7 +456,7 @@ For the ICSI corpus, the traditional test set (see citations [4]) is shown in be
 icsi_test = ['Bed004', 'Bed009', 'Bed016', 'Bmr005', 'Bmr019', 'Bro018']
 ```
 # Citations
-In addition to the original dataset paper, if you find this repository helpful, please consider to cite the publications:
+In addition to the original dataset paper, if you find this repository helpful, please cite this survey, along with which this repository is released:
 
 [1] [Abstractive Meeting Summarization: A Survey](https://arxiv.org/abs/2208.04163)
 ```
@@ -467,6 +467,8 @@ In addition to the original dataset paper, if you find this repository helpful, 
   year={2022}
 }
 ```
+Also, consider to cite the other related publications:
+
 [2] [Energy-based Self-attentive Learning of Abstractive Communities for Spoken Language Understanding](https://aclanthology.org/2020.aacl-main.34/)
 ```
 @inproceedings{shang2020energy,
